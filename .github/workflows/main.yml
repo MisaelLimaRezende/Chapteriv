@@ -39,12 +39,11 @@ jobs:
     - run: npm run report:mocha
     
 # GitHub Pages --> Publicar os Relatorios 
+
     - name: Deploy to GitHub Pages
-    
       uses: JamesIves/github-pages-deploy-action@v4.2.5
-       with:
-       
-      GITHUB_TOKKEN: ${{ secrets.GITHUB_TOKKEN }}
-      BRANCH: gh-pages
-      FOLDER: mochawesome-report
+      with:
+        GITHUB_TOKKEN: ${{ secrets.GITHUB_TOKKEN }}
+        BRANCH: gh-pages
+        FOLDER: mochawesome-report
     
