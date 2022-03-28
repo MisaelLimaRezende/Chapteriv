@@ -1,0 +1,3 @@
+<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Fri, 25 Mar 2022 21:48:30 GMT" time="15.98">
+<testcase classname="Cadastro" name="Quando eu informar os dados e finalizar, ent&#xE3;o o cadastro deve ser efetuado" time="9.96"/>
+</testsuite>
