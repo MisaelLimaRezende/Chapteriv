@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-28T20:22:07.971Z",
+    "end": "2022-03-28T20:22:15.731Z",
+    "duration": 7760,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "374aca60-08a1-44da-9054-1c7aac5bdac5",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "22233817-5bb4-4e0d-b299-c91c0caaeed4",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
+              "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado",
+              "timedOut": null,
+              "duration": 4696,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://form-agilizei.netlify.app/');\ncy.get('input[name=firstName]').type(chance.first());\ncy.get('input[name=lastName]').type(chance.last());\ncy.get('textarea[name=adress]').type(chance.address());\ncy.get('input[name=emailAdress]').type(chance.email());\ncy.get(\"input[value=n]\").check();\ncy.get(\"input[type=checkbox]\").check('Netflix');\ncy.get(\"input[type=checkbox]\").check('Dormir');\ncy.get(\"select#countries\").select('Dinamarca', {\n  force: true\n});\ncy.get(\"select#years\").select('2021', {\n  force: true\n});\ncy.get(\"select#months\").select('Janeiro', {\n  force: true\n});\ncy.get(\"select#days\").select('29', {\n  force: true\n});\ncy.get(\"input[id=firstpassword]\").type('Misael@123456');\ncy.get(\"input[id=secondpassword]\").type('Misael@123456');\ncy.get('#submitbtn').click();\ncy.url().should('contain', 'listagem');",
+              "err": {},
+              "uuid": "34bbcbba-3359-4056-8b1e-7ce3f720aa95",
+              "parentUUID": "22233817-5bb4-4e0d-b299-c91c0caaeed4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "34bbcbba-3359-4056-8b1e-7ce3f720aa95"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4696,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
